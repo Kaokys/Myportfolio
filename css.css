@@ -175,35 +175,6 @@ nav a:hover {
   opacity: 0.9;
 }
 
-/* ===== PROJECTS SECTION ===== */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.project-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.project-card h3 {
-  color: white;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-}
-
-.project-card p {
-  opacity: 0.8;
-  line-height: 1.6;
-}
-
 /* ===== ACTIVITIES SECTION ===== */
 .activities-grid {
   display: grid;
@@ -251,10 +222,10 @@ nav a:hover {
   border: 1px solid rgba(0, 255, 255, 0.3);
 }
 
-/* ===== CERTIFICATES SECTION ===== */
-.certificates-grid {
+/* ===== CERTIFICATE SECTION ===== */
+.certificate-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -263,30 +234,40 @@ nav a:hover {
 .certificate-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 2rem;
-  text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
 }
 
 .certificate-card h3 {
   color: white;
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
-.certificate-card .issuer {
-  color: #aaa;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+.certificate-card p {
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
-.certificate-card .date {
-  color: #888;
+.certificate-details {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.certificate-tag {
+  background: rgba(0, 255, 255, 0.2);
+  color: #0ff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
   font-size: 0.8rem;
+  border: 1px solid rgba(0, 255, 255, 0.3);
 }
-
 /* ===== SKILLS SECTION ===== */
 .skills-grid {
   display: grid;

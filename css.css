@@ -244,8 +244,13 @@ nav a:hover {
 }
 
 .educations img {
-  border-radius: 150px;
+  border-radius: 0px;
   margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.educations img:hover {
+  transform: scale(1.05);
 }
 
 .educations h2 {
@@ -263,14 +268,27 @@ nav a:hover {
   margin: 0 auto;
 }
 
+.educations-grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .educations-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  border-radius: 75px;
+  border-radius: 45px;
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.educations-card:hover {
+  box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.3);
 }
 
 .educations-card h3 {
@@ -299,7 +317,14 @@ nav a:hover {
   border-radius: 15px;
   font-size: 0.8rem;
   border: 1px solid rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.educations-tag:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 1px rgba(0, 255, 255, 0.445); 
+}
+
 
 /* ===== ACTIVITIES SECTION ===== */
 .activities-grid {
